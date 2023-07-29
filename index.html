@@ -5,9 +5,33 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
     <title>Tic Tac Toe</title>
 </head>
 <body>
+
+    <section class="section--start">
+        <img src="img/logo.png" alt="Tic Tac Toe logo" class="logo">
+        <div class="player-pick">
+            <h3 class="player-pick--heading">Pick player 1's sign</h3>
+            <div class="player-pick--picker">
+                <label for="sign-x" class="hide-element">Select x</label>
+                <input type="radio" name="select-sign" id="sign-x" checked>
+                <label for="sign-y" class="hide-element">Select y</label>
+                <input type="radio" name="select-sign" id="sign-y">
+            </div>
+        </div>
+        <button class="player-pick--btn">Start game</button>
+    </section>
+
+    <main class="disabled">
+
+    </main>
 
 </body>
 </html>
