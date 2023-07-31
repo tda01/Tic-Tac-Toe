@@ -15,23 +15,70 @@
 </head>
 <body>
 
-    <section class="section--start">
+    <section class="section--start disabled">
         <img src="img/logo.png" alt="Tic Tac Toe logo" class="logo">
         <div class="player-pick">
             <h3 class="player-pick--heading">Pick player 1's sign</h3>
             <div class="player-pick--picker">
                 <label for="sign-x" class="hide-element">Select x</label>
-                <input type="radio" name="select-sign" id="sign-x" checked>
-                <label for="sign-y" class="hide-element">Select y</label>
-                <input type="radio" name="select-sign" id="sign-y">
+                <input type="radio" name="select-sign" id="sign-x" value="x" checked>
+                <label for="sign-o" class="hide-element">Select o</label>
+                <input type="radio" name="select-sign" id="sign-o" value="o">
             </div>
         </div>
         <button class="player-pick--btn">Start game</button>
     </section>
 
-    <main class="disabled">
+    <main class="">
+
+        <section class="section--upper">
+            <img src="img/logo.png" alt="Tic Tac Toe logo" class="logo">
+            <div class="current-turn">
+                <div class="current-turn--sign"></div>
+                Turn
+            </div>
+            <button class="reset-btn">
+                <ion-icon class="restart-icon" name="reload-outline"></ion-icon>
+            </button>
+        </section>
+
+        <section class="section--game">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        <section class="section--bottom">
+            <div class="game-score player-x-score">
+                <p class="player-sign">Player x</p>
+                <p class="player-score">0</p>
+            </div>
+
+            <div class="game-score game-ties">
+                <p class="player-sign">Ties</p>
+                <p class="player-score">0</p>
+            </div>
+
+            <div class="game-score player-o-score">
+                <p class="player-sign">Player y</p>
+                <p class="player-score">0</p>
+            </div>
+
+
+        </section>
+
+
+
 
     </main>
-
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
