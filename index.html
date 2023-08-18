@@ -15,7 +15,7 @@
 </head>
 <body>
 
-    <section class="section--start disabled">
+    <section class="section--start">
         <img src="img/logo.png" alt="Tic Tac Toe logo" class="logo">
         <div class="player-pick">
             <h3 class="player-pick--heading">Pick player 1's sign</h3>
@@ -29,7 +29,7 @@
         <button class="player-pick--btn">Start game</button>
     </section>
 
-    <main class="">
+    <main class="disabled">
 
         <section class="section--upper">
             <img src="img/logo.png" alt="Tic Tac Toe logo" class="logo">
@@ -66,15 +66,21 @@
             </div>
 
             <div class="game-score player-o-score">
-                <p class="player-sign">Player y</p>
+                <p class="player-sign">Player O</p>
                 <p class="player-score">0</p>
             </div>
-
-
         </section>
 
+        <section class="section--post-game">
+            <p class="congratulations">Congratulations!</p>
+            <h2 class="winner-header">X won!</h2>
+            <div class="buttons">
+                <button class="button">Restart</button>
+                <button class="button">Continue</button>
+            </div>
+        </section>
 
-
+    <div id="overlay"></div>
 
     </main>
     <script src="script.js"></script>
